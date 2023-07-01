@@ -6,6 +6,7 @@ public class PlayerDamage : MonoBehaviour
 {
     public int playerDamage = 3;
     public float delay = 0;
+    public float delayTimer; 
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +18,18 @@ public class PlayerDamage : MonoBehaviour
     void Update()
     {
         delay = delay + Time.deltaTime;
-        if (Input.GetMouseButtonDown(0) && delay >= 2)
+        if (Input.GetMouseButtonDown(0) && delay >= delayTimer && GameObject.Find("Enemy(Clone)"))
         {
             FindObjectOfType<EnenyHealth>().damagedealt(playerDamage);
             Debug.Log("clicked");
             delay = 0;
         }
 
+        if (Input.GetMouseButtonDown(0) && delay >= delayTimer && GameObject.Find("Boss(Clone)"))
+        {
+            FindObjectOfType<BossHealth>().damagedealt(playerDamage);
+            Debug.Log("clicked");
+            delay = 0;
+        }
     }
 }

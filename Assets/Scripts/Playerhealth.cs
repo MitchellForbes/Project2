@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Playerhealth : MonoBehaviour
 {
-    public int Health;
+    public int Health = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +15,10 @@ public class Playerhealth : MonoBehaviour
     void Update()
     {
         
+    }
+    public void damagedealt(int damage)
+    {
+        Health = Health - damage;
+        Debug.Log("player took damage");
     }
 }

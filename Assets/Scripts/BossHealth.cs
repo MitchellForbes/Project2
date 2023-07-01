@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnenyHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour
 {
 
-    public int health = 10;
-    public int loot = 5;
+    public int health = 20;
+    public int betterLoot = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +23,9 @@ public class EnenyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            FindObjectOfType<PlayerWealth>().addLoot(loot);
+            FindObjectOfType<PlayerWealth>().addBetterLoot(betterLoot);
             Destroy(gameObject);
         }
 
-
     }
 }
-   
