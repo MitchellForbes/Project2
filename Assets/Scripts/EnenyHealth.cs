@@ -1,19 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class EnenyHealth : MonoBehaviour
 {
 
     public int health = 10;
     public int loot = 5;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-
 
     public void damagedealt(int damage)
     {

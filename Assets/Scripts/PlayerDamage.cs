@@ -32,4 +32,10 @@ public class PlayerDamage : MonoBehaviour
             delay = 0;
         }
     }
+
+
+    public void AttackAdd()
+    {
+        playerDamage = playerDamage + 1;
+    }
 }
