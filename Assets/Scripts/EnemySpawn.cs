@@ -29,13 +29,13 @@ public class EnemySpawn : MonoBehaviour
             alive = false;
         }
 
-        if (alive == false && Counter < 10)
+        if (alive == false && Counter < 5)
         {
             Instantiate(enemy, new Vector3(14,-3.5f,0), Quaternion.identity);
             Counter = Counter + 1;
         }
 
-        if (Counter == 10)
+        if (Counter == 5)
         {
             Instantiate(bossEnemy, new Vector3(14, -3.5f, 0), Quaternion.identity);
             Counter = 0;

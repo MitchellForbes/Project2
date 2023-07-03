@@ -43,10 +43,6 @@ public class PlayerWealth : MonoBehaviour
         betteerLoot = betteerLoot + betterLootAmount;
     }
 
-    public void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
 
 
     public void AttackAddLoot()

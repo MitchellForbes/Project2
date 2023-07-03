@@ -42,6 +42,11 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void EnemyHealth(int health)
+    {
+        enemyHealth.text = "Enemy Health:  " + health;
+    }
+
 }
 
 
