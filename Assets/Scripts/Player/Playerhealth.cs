@@ -13,7 +13,7 @@ public class Playerhealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthUI.text = "Player health: " + Health;
+        //healthUI.text = "Player health: " + Health;
     }
     public void damagedealt(int damage)
     {
@@ -24,10 +24,5 @@ public class Playerhealth : MonoBehaviour
         {
             FindObjectOfType<Menu>().Back();
         }
-    }
-
-    public void healthAdd()
-    {
-        Health = Health + 3;
     }
 }

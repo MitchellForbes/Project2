@@ -6,27 +6,22 @@ using TMPro;
 public class EnenyHealth : MonoBehaviour
 {
 
-    public int health = 10;
+    public int health;
     public int loot = 5;
 
 
 
-    public void Update()
-    {
-        FindObjectOfType<Menu>().EnemyHealth(health);
-    }
 
     public void damagedealt(int damage)
     {
+        
+        health -= damage;
         Debug.Log("Took damage");
-        health = health - damage;
-
         if (health <= 0)
         {
             FindObjectOfType<PlayerWealth>().addLoot(loot);
             Destroy(gameObject);
         }
-
 
     }
 }

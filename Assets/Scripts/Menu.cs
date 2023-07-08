@@ -29,24 +29,6 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-
-    public void shop()
-    {
-        Shop.SetActive(true);
-        Time.timeScale = 0;
-    }
-
-    public void backout()
-    {
-        Shop.SetActive(false);
-        Time.timeScale = 1;
-    }
-
-    public void EnemyHealth(int health)
-    {
-        enemyHealth.text = "Enemy Health:  " + health;
-    }
-
 }
 
 

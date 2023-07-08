@@ -7,18 +7,15 @@ public class EnemyDamage : MonoBehaviour
 
     private float delay = 0;
     public int enemyDamage = 2;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         delay = delay + Time.deltaTime;
+    }
 
-        if (delay >= 5)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player") && delay > 0.5)
         {
             FindObjectOfType<Playerhealth>().damagedealt(enemyDamage);
             delay = 0;
