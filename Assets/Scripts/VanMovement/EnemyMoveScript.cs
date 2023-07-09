@@ -1,0 +1,64 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyMoveScript : MonoBehaviour
+{
+    public GameObject Player;
+
+    public bool PlayerWentIntoRange = false;
+
+    public float speed = 0.1f;
+
+    public int dammage = 5;
+    bool canStartNextCourtien = true;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    IEnumerator CanAttack()
+    {
+        canStartNextCourtien = false;
+        yield return new WaitForSeconds(2);
+        canStartNextCourtien = true;
+        MovePlayer.instance.Health = MovePlayer.instance.Health - dammage;
+
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(PlayerWentIntoRange)
+        {
+            Vector3 move = Player.transform.position - transform.position;
+            if (Vector3.Distance(transform.position, Player.transform.position) < 4)
+            {
+                if (canStartNextCourtien)
+                {
+
+
+                    StartCoroutine("CanAttack");
+                }
+                move = Vector3.zero;
+            }
+
+         
+            move = Vector3.ClampMagnitude(move, 1);
+            transform.Translate(move * speed * Time.deltaTime);
+
+          
+
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            PlayerWentIntoRange = true;
+        }
+    }
+}
