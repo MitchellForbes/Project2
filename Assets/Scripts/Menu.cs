@@ -7,8 +7,6 @@ using TMPro;
 public class Menu : MonoBehaviour
 {
     public TextMeshProUGUI enemyHealth;
-
-    public GameObject Shop;
     public void Playgame()
     {
         SceneManager.LoadScene("MainLevel");
@@ -29,6 +27,20 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void damageButton()
+    {
+        FindObjectOfType<PlayerWealth>().AddDamage();
+    }
+
+    public void fireRateButton()
+    {
+        FindObjectOfType<PlayerWealth>().increaseFireRate();
+    }
+
+    public void toShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
 }
 
 

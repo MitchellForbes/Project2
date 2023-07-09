@@ -10,23 +10,36 @@ public class EnemySpawn : MonoBehaviour
     public float Timer;
 
     [SerializeField] GameObject enemy;
-
+    private void Start()
+    {
+        spawnPoints = new List<GameObject>(GameObject.FindGameObjectsWithTag("EnemySpawner"));
+        InvokeRepeating("spawn", Delay, Delay);
+    }
 
 
     // Update is called once per frame
-    void Update()
-    {
-       spawnPoints = new List<GameObject>(GameObject.FindGameObjectsWithTag("EnemySpawner"));
-       Timer += Time.deltaTime;
-       Vector2 spawnPosition = new Vector2(Random.Range(-3.0F, 3.0F), Random.Range(-3.0F, 3.0F));
-       if (Timer > Delay)
-        {
-            foreach (GameObject spawnPoint in spawnPoints)
-            {
-                Instantiate(enemy, spawnPoint.transform.position, Quaternion.identity);
-            }
-            Timer = 0;
-        }
+    //void Update()
+    //{
+    //   spawnPoints = new List<GameObject>(GameObject.FindGameObjectsWithTag("EnemySpawner"));
+    //   Timer += Time.deltaTime;
+    //   Vector2 spawnPosition = new Vector2(Random.Range(-3.0F, 3.0F), Random.Range(-3.0F, 3.0F));
+    //   if (Timer > Delay)
+    //    {
+    //        for (int I = 0; I < spawnPoints.Count; I++)
+    //        {
+    //           Instantiate(enemy, transform.position, Quaternion.identity);
+    //        }
+    //        Timer = 0;
+    //    }
 
+    //}
+
+    void spawn ()
+    {
+        for (int I = 0; I < spawnPoints.Count; I++)
+        {
+            Instantiate(enemy, transform.position, Quaternion.identity);
+        }   
     }
 }
+

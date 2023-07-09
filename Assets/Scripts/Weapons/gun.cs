@@ -10,6 +10,7 @@ public class gun : MonoBehaviour
     public Transform bulletTransform;
     private float timer;
     public float delayBetweenFiring;
+    public float fireRateUpdate = 0.01F;
 
 
     private void Start()
@@ -35,5 +36,11 @@ public class gun : MonoBehaviour
             Instantiate(Bullet, bulletTransform.position, Quaternion.identity);
             timer = 0;
         }
+    }
+
+    public void fireRate()
+    {
+        delayBetweenFiring -= fireRateUpdate;
+        Debug.Log("firerate increased");
     }
 }
