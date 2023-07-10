@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5606483129958148179}
   - component: {fileID: 9215585592260488255}
   - component: {fileID: 9215585592260488250}
-  - component: {fileID: 9215585592260488240}
+  - component: {fileID: 2302609762872961996}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -121,7 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0
   speedCap: 15
-  direction: 0
   distance: 0
   playerBody: {fileID: 9215585592260488255}
 --- !u!61 &486204701168987935
@@ -223,7 +222,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9215585592260488240
+--- !u!114 &2302609762872961996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,14 +231,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 704213613274578168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c68febffd8d8ce4fb6563400e0c6a84, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d97c145082367743adc5e645f6b540f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  speedCap: 15
-  direction: 0
-  distance: 0
-  playerBody: {fileID: 9215585592260488255}
+  Starts: {fileID: 0}
+  End: {fileID: 0}
+  Health: 100
 --- !u!1 &9215585592063894884
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,3 +453,4 @@ MonoBehaviour:
   Bullet: {fileID: 6867229978207860661, guid: ccbdf525e34278a41bd67d6dc12c0269, type: 3}
   bulletTransform: {fileID: 9215585592063894887}
   delayBetweenFiring: 0.1
+  fireRateUpdate: 0.01

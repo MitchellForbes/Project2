@@ -15,7 +15,7 @@ public class gun : MonoBehaviour
 
     private void Start()
     {
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        mainCam = Camera.main;
     }
 
     // Update is called once per frame

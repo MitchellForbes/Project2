@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMoveScript : MonoBehaviour
+public class Money : MonoBehaviour
 {
-     GameObject Player;
+    GameObject Player;
 
     public bool PlayerWentIntoRange = false;
 
@@ -27,20 +27,10 @@ public class EnemyMoveScript : MonoBehaviour
 
     }
 
-    float health = 100;
 
-    public bool Damage(float damage)
-    {
-        health -= damage;
-
-        return health < 0;
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if(PlayerWentIntoRange)
+        if (PlayerWentIntoRange)
         {
             Vector3 move = Player.transform.position - transform.position;
             if (Vector3.Distance(transform.position, Player.transform.position) < 1.5)
@@ -54,18 +44,18 @@ public class EnemyMoveScript : MonoBehaviour
                 move = Vector3.zero;
             }
 
-         
+
             move = Vector3.ClampMagnitude(move, 1);
             transform.Translate(move * speed * Time.deltaTime);
 
-          
+
 
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             PlayerWentIntoRange = true;
         }

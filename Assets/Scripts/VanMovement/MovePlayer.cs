@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GunTypes 
+{
+    none,
+    minigun, 
+    shotgun,
+    flamerthrower,
+    grenadelauncher
+}
+
+
 public class MovePlayer : MonoBehaviour
 {
+    public Dictionary<int, GunTypes> weaponSlots = new();
 
-    public GameObject Starts, End;
+
+    public GameObject Starts, End,van;
 
     float percentageofthewayComplete = 0;
 
@@ -18,10 +30,19 @@ public class MovePlayer : MonoBehaviour
 
     bool isEnemyCurrentlyInfront = false;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
     }
+
+    private void Start()
+    {
+        
+
+        weaponSlots.Add(1, GunTypes.minigun);
+    }
+
+    public Transform Check;
 
     // Update is called once per frame
     void Update()
@@ -40,10 +61,27 @@ public class MovePlayer : MonoBehaviour
 
         if(isEnemyCurrentlyInfront)
         {
+           
+            if (Speed > maxSpeed/2)
+            {
+                Debug.Log("enemy hit");
+               Collider2D[] we = Physics2D.OverlapBoxAll(Check.position, Vector2.one * 4, 0);
+                foreach(Collider2D p in we)
+                {
+                    if (p.CompareTag("Enemy"))
+                    {
+                        if (p.GetComponentInParent<EnemyMoveScript>().Damage(100))
+                        {
+                            Destroy(p.gameObject.transform.parent.gameObject);
+                        }
+                    }
+                }
+            }
             Speed = 0;
         }
 
         percentageofthewayComplete += Speed * Time.deltaTime;
+        gunCheck(weaponSlots[1]);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -61,5 +99,62 @@ public class MovePlayer : MonoBehaviour
         {
             isEnemyCurrentlyInfront = false;
         }
+    }
+
+    public LayerMask EnemeyLayer;
+
+    bool slot1 = true;
+    IEnumerator Slot1(Collider2D c)
+    {
+        slot1 = false;
+        yield return new WaitForSeconds(minigunFireRate);
+        slot1 = true;
+        if(c.GetComponentInParent<EnemyMoveScript>().Damage(minigunDammage))
+        {
+            Destroy(c.gameObject.transform.parent.gameObject);
+        }
+
+    }
+
+
+    [Header("MiniGun Stats")]
+    public float minigunDammage = 3;
+    public float minigunFireRate = 0.05f;
+
+
+
+    private void gunCheck(GunTypes weaponSlot)
+    {
+        switch(weaponSlot)
+        {
+            case GunTypes.minigun:
+                Collider2D clossestCol = null;
+                float DistanceCheck = 100;
+                Collider2D[] col = Physics2D.OverlapCircleAll(van.transform.position, 6f, EnemeyLayer);
+                foreach(Collider2D c in col)
+                {
+                    if(Vector3.Distance(van.transform.position,c.gameObject.transform.position) < DistanceCheck)
+                    {
+                        DistanceCheck = Vector3.Distance(van.transform.position, c.gameObject.transform.position);
+                        clossestCol = c;
+                    }
+                }
+                if(clossestCol != null && slot1)
+                {
+                    StartCoroutine(Slot1(clossestCol));
+                }
+                
+
+
+
+                break;
+        }
+            
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(van.transform.position, 6f);
     }
 }
