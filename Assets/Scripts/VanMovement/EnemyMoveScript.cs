@@ -27,7 +27,7 @@ public class EnemyMoveScript : MonoBehaviour
 
     }
 
-    float health = 100;
+    public float health = 100;
 
     public bool Damage(float damage)
     {
