@@ -24,6 +24,8 @@ public class MovePlayer : MonoBehaviour
     float Speed = 0;
     float maxSpeed = 0.05f;
 
+    public int MONEY = 0;
+
     public int Health = 100;
 
     public static MovePlayer instance;
@@ -103,13 +105,22 @@ public class MovePlayer : MonoBehaviour
 
     public LayerMask EnemeyLayer;
 
+    public GameObject bullet;
+
     bool slot1 = true;
+
+    public GameObject shootpoint;
     IEnumerator Slot1(Collider2D c)
     {
         slot1 = false;
         yield return new WaitForSeconds(minigunFireRate);
         slot1 = true;
-        if(c.GetComponentInParent<EnemyMoveScript>().Damage(minigunDammage))
+        shootpoint.transform.LookAt(c.transform.position);
+        GameObject tmp = Instantiate(bullet, shootpoint.transform);
+        tmp.GetComponent<Bullet1>().enemy = c.gameObject;
+       
+        
+        if (c.GetComponentInParent<EnemyMoveScript>().Damage(minigunDammage))            
         {
             Destroy(c.gameObject.transform.parent.gameObject);
         }
@@ -131,6 +142,7 @@ public class MovePlayer : MonoBehaviour
                 Collider2D clossestCol = null;
                 float DistanceCheck = 100;
                 Collider2D[] col = Physics2D.OverlapCircleAll(van.transform.position, 6f, EnemeyLayer);
+
                 foreach(Collider2D c in col)
                 {
                     if(Vector3.Distance(van.transform.position,c.gameObject.transform.position) < DistanceCheck)

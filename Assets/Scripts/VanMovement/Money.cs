@@ -10,7 +10,7 @@ public class Money : MonoBehaviour
 
     public float speed = 0.1f;
 
-    public int dammage = 5;
+    public int MONEY = 5;
     bool canStartNextCourtien = true;
     // Start is called before the first frame update
     void Start()
@@ -18,14 +18,6 @@ public class Money : MonoBehaviour
         Player = MovePlayer.instance.van;
     }
 
-    IEnumerator CanAttack()
-    {
-        canStartNextCourtien = false;
-        yield return new WaitForSeconds(1);
-        canStartNextCourtien = true;
-        MovePlayer.instance.Health = MovePlayer.instance.Health - dammage;
-
-    }
 
 
     void Update()
@@ -35,12 +27,9 @@ public class Money : MonoBehaviour
             Vector3 move = Player.transform.position - transform.position;
             if (Vector3.Distance(transform.position, Player.transform.position) < 1.5)
             {
-                if (canStartNextCourtien)
-                {
 
-
-                    StartCoroutine("CanAttack");
-                }
+                MovePlayer.instance.MONEY = MovePlayer.instance.MONEY + MONEY;
+                Destroy(this.gameObject);
                 move = Vector3.zero;
             }
 
