@@ -39,15 +39,6 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            FindObjectOfType<EnenyHealth>().damagedealt(Damage);
-            Destroy(gameObject);
-        }
-    }
-
 
     public void bulletDamage(int increase)
     {

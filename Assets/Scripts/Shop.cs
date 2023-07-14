@@ -1,17 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Shop : MonoBehaviour
 {
+    [SerializeField] GameObject ShopUI;
 
-    public void shopload()
+
+    void Update()
     {
-        GameObject[] State;
-        Debug.Log("load shop");
-        SceneManager.LoadScene("Shop");
-        State = GameObject.FindGameObjectsWithTag("Player");
-        State[0].SetActive(false);
+
+        if (Input.GetKeyDown(KeyCode.P) && !ShopUI.activeInHierarchy)
+        {
+            ShopUI.SetActive(true);
+            Time.timeScale = 0;
+
+        }
+        else if (Input.GetKeyDown(KeyCode.P) && ShopUI.activeInHierarchy)
+        {
+            ShopUI.SetActive(false);
+            Time.timeScale = 1;
+        }
+
     }
 }
