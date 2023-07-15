@@ -7,12 +7,20 @@ public class Bullet1 : MonoBehaviour
     public GameObject enemy = null;
     Rigidbody2D rb;
 
+
+    IEnumerator BulletsDestroy()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
         gameObject.transform.parent = null;
        rb= GetComponent<Rigidbody2D>();
-      
+        StartCoroutine(BulletsDestroy()); 
     }
 
     // Update is called once per frame
