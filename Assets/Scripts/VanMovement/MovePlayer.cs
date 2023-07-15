@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public enum GunTypes 
 {
@@ -30,6 +33,8 @@ public class MovePlayer : MonoBehaviour
 
     public static MovePlayer instance;
 
+    public Slider progress;
+
     bool isEnemyCurrentlyInfront = false;
 
     private void Awake()
@@ -47,6 +52,12 @@ public class MovePlayer : MonoBehaviour
     }
 
     public Transform Check;
+
+    Vector3 mouse_pos;
+    Transform target;
+    Vector3 object_pos;
+    float angle;
+    public bool isLocal;
 
     // Update is called once per frame
     void Update()
@@ -95,8 +106,31 @@ public class MovePlayer : MonoBehaviour
         gunCheck(Shop.instance.gun5,6);
         gunCheck(Shop.instance.gun6,7);
         gunCheck(Shop.instance.gun7,8);
-    }
+        progress.value = percentageofthewayComplete;
 
+
+
+        //Mouse Shoot
+      
+        if(Input.GetMouseButtonDown(0))
+        {
+            mouse_pos = Input.mousePosition;
+            mouse_pos.z = -20;
+            object_pos = Camera.main.WorldToScreenPoint(shootpoint.transform.position);
+            mouse_pos.x = mouse_pos.x - object_pos.x;
+            mouse_pos.y = mouse_pos.y - object_pos.y;
+            angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+            shootpoint.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+           // shootpoint.transform.LookAt(Camera.main.WorldToScreenPoint(Input.mousePosition), Vector3.forward);
+            GameObject tmp = Instantiate(bullet, newShootPoint.transform.position,shootpoint.transform.rotation);
+            tmp.GetComponent<Bullet1>().PlayerMode = true;
+
+        }
+        
+
+    }
+    public GameObject newShootPoint;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Enemy"))

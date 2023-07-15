@@ -6,7 +6,7 @@ public class Bullet1 : MonoBehaviour
 {
     public GameObject enemy = null;
     Rigidbody2D rb;
-
+    public bool PlayerMode = false;
 
     IEnumerator BulletsDestroy()
     {
@@ -21,6 +21,10 @@ public class Bullet1 : MonoBehaviour
         gameObject.transform.parent = null;
        rb= GetComponent<Rigidbody2D>();
         StartCoroutine(BulletsDestroy()); 
+        if(PlayerMode)
+        {
+            rb.AddForce(transform.right * 1000);
+        }
     }
 
     // Update is called once per frame
@@ -37,6 +41,15 @@ public class Bullet1 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            if(PlayerMode)
+            {
+                if(collision.gameObject.transform.parent.gameObject.GetComponent<EnemyMoveScript>().Damage(30f))
+                {
+                    Destroy(collision.gameObject.transform.parent.gameObject);
+                    MovePlayer.instance.MONEY += 50;
+                }
+            }
+
             Destroy(gameObject);
         }
     }

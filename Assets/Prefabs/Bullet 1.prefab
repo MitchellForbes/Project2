@@ -211,7 +211,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!114 &5598186421598401573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,3 +224,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588ef3ce3de30b845b1373ade8b8d674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  PlayerMode: 0

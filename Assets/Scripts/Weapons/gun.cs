@@ -31,7 +31,7 @@ public class gun : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        if (timer > delayBetweenFiring)
+        if (timer > delayBetweenFiring && Input.GetMouseButtonDown(0))
         {
             Instantiate(Bullet, bulletTransform.position, Quaternion.identity);
             timer = 0;
