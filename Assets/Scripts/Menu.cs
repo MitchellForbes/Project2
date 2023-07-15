@@ -26,10 +26,6 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    public void toShop()
-    {
-        SceneManager.LoadScene("Shop");
-    }
 }
 
 
