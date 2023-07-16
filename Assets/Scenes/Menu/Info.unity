@@ -239,7 +239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyHealth: {fileID: 0}
-  Shop: {fileID: 0}
 --- !u!1 &754996887
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,18 +381,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press D to increase speed
+  m_text: 'Press D to move forward
 
-    Press A to decrease speed
+    Get in range to auto shoot near by enemies
 
-    Kill Enemies
-    to get score
+    Reach
+    the end
 
-    Spend score to upgrade your weapons
+    Press P to open the Upgrade
 
-    survive
+    Inbetween levels buy more weapons
 
-'
+    Max
+    of 8 weapon slots'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -420,8 +420,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
