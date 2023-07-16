@@ -43,10 +43,10 @@ public class Bullet1 : MonoBehaviour
         {
             if(PlayerMode)
             {
-                if(collision.gameObject.transform.parent.gameObject.GetComponent<EnemyMoveScript>().Damage(30f))
+                if(collision.gameObject.transform.parent.gameObject.GetComponent<EnemyMoveScript>().Damage(15f))
                 {
                     Destroy(collision.gameObject.transform.parent.gameObject);
-                    MovePlayer.instance.MONEY += 50;
+                    MovePlayer.instance.MONEY += 20;
                 }
             }
 

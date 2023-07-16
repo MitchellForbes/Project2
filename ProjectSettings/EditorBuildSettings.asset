@@ -14,13 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: a482a13b111c97340aa3a54976226d06
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainLevel/CarScene 1.unity
     guid: a3b9726ab92a91147852294ca3af921b
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: ba494c4a1d50fad4b8b2f5aab5d6cf23
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainLevel/CarScene 2.unity
     guid: 6ad42e5f7b7cc634f84ac8e15b2e1111
+  - enabled: 1
+    path: Assets/Scenes/MainLevel/CarScene.unity
+    guid: bde2ba354a71fa948908ee51ae4bc2a6
   m_configObjects: {}

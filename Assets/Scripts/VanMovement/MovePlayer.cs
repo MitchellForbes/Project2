@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
-
+using UnityEngine.SceneManagement;
 public enum GunTypes 
 {
     none,
@@ -34,20 +34,26 @@ public class MovePlayer : MonoBehaviour
     public static MovePlayer instance;
 
     public Slider progress;
+    public Slider Healthbar;
 
     bool isEnemyCurrentlyInfront = false;
+
+    public GameObject DeathScreen;
 
     private void Awake()
     {
         instance = this;
     }
     
-    
+    public void LoadLevelAgian()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
     private void Start()
     {
         
-        
+        Time.timeScale = 1.0f;
      
     }
 
@@ -58,6 +64,7 @@ public class MovePlayer : MonoBehaviour
     Vector3 object_pos;
     float angle;
     public bool isLocal;
+    public GameObject winscreen;
 
     // Update is called once per frame
     void Update()
@@ -107,8 +114,18 @@ public class MovePlayer : MonoBehaviour
         gunCheck(Shop.instance.gun6,7);
         gunCheck(Shop.instance.gun7,8);
         progress.value = percentageofthewayComplete;
+        Healthbar.value = Health;
 
+        if(Health <= 0)
+        {
+            DeathScreen.SetActive(true);
+        }
 
+        if(percentageofthewayComplete >= 1)
+        {
+            Time.timeScale = 0;
+            winscreen.SetActive(true) ;
+        }
 
         //Mouse Shoot
       
