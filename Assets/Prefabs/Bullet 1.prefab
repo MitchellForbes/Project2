@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5598186421422606517}
   - component: {fileID: 5598186421422606522}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: BulletTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,9 +152,9 @@ GameObject:
   - component: {fileID: 5598186421598401575}
   - component: {fileID: 5598186421598401574}
   - component: {fileID: 5598186421598401573}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Bullet 1
-  m_TagString: Untagged
+  m_TagString: EnemySpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,3 +226,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 0}
   PlayerMode: 0
+  BloodEffect: {fileID: 4508116819495450336, guid: 1fcfd8b8db7cf514c847a66fbcae2c47, type: 3}

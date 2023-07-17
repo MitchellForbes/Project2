@@ -632,7 +632,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &37766356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1270,7 +1272,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &69928142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1775,7 +1779,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &83730875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,7 +1879,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &89798318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +1979,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &97216763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2443,7 +2453,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &128451419
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,7 +3919,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &198064551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4705,7 +4719,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &237078316 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -5468,7 +5484,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &288806664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6366,7 +6384,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &323931413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -6726,7 +6746,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &335679148
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,7 +6846,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &337246013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6983,7 +7007,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &338613013
 GameObject:
   m_ObjectHideFlags: 0
@@ -7637,7 +7663,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &400180440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8067,7 +8095,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &420179058
 GameObject:
   m_ObjectHideFlags: 0
@@ -9057,7 +9087,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &442125384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -9835,7 +9867,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &463698805
 GameObject:
   m_ObjectHideFlags: 0
@@ -9933,7 +9967,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &463851203
 GameObject:
   m_ObjectHideFlags: 0
@@ -10368,7 +10404,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &475708836 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -11212,7 +11250,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &522293431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -11503,7 +11543,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &538152725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12541,7 +12583,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &611520066
 GameObject:
   m_ObjectHideFlags: 0
@@ -13115,7 +13159,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &622372756
 GameObject:
   m_ObjectHideFlags: 0
@@ -13213,7 +13259,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &640295830
 GameObject:
   m_ObjectHideFlags: 0
@@ -13311,7 +13359,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &644713859
 GameObject:
   m_ObjectHideFlags: 0
@@ -14434,7 +14484,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &694380753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -14838,7 +14890,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &714992506 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -15391,7 +15445,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &743070266
 GameObject:
   m_ObjectHideFlags: 0
@@ -15746,7 +15802,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &756450714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19107,7 +19165,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &898170148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20027,7 +20087,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &936770851
 GameObject:
   m_ObjectHideFlags: 0
@@ -20125,7 +20187,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &937514442
 GameObject:
   m_ObjectHideFlags: 0
@@ -21024,7 +21088,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &957077077
 GameObject:
   m_ObjectHideFlags: 0
@@ -21255,7 +21321,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &961637941
 GameObject:
   m_ObjectHideFlags: 0
@@ -21476,7 +21544,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &973770819
 GameObject:
   m_ObjectHideFlags: 0
@@ -22258,7 +22328,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1013873902
 GameObject:
   m_ObjectHideFlags: 0
@@ -22515,7 +22587,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &1020596479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22792,7 +22866,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1033653497
 GameObject:
   m_ObjectHideFlags: 0
@@ -23313,6 +23389,7 @@ MonoBehaviour:
   Check: {fileID: 1438913520}
   isLocal: 0
   winscreen: {fileID: 616261730}
+  BloodEffect: {fileID: 4508116819495450336, guid: 1fcfd8b8db7cf514c847a66fbcae2c47, type: 3}
   newShootPoint: {fileID: 1003851951}
   EnemeyLayer:
     serializedVersion: 2
@@ -24085,7 +24162,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1122431521
 GameObject:
   m_ObjectHideFlags: 0
@@ -24259,7 +24338,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1129026303
 GameObject:
   m_ObjectHideFlags: 0
@@ -24357,7 +24438,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1129806364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -25673,7 +25756,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1198472117
 GameObject:
   m_ObjectHideFlags: 0
@@ -25935,7 +26020,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1209801660
 GameObject:
   m_ObjectHideFlags: 0
@@ -26190,7 +26277,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1224030902
 GameObject:
   m_ObjectHideFlags: 0
@@ -26397,7 +26486,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1232235243
 GameObject:
   m_ObjectHideFlags: 0
@@ -26495,7 +26586,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1235578299
 GameObject:
   m_ObjectHideFlags: 0
@@ -26881,7 +26974,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1257272541
 GameObject:
   m_ObjectHideFlags: 0
@@ -26979,7 +27074,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1259214141
 GameObject:
   m_ObjectHideFlags: 0
@@ -27334,7 +27431,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1288148588
 GameObject:
   m_ObjectHideFlags: 0
@@ -28582,7 +28681,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1353654027
 GameObject:
   m_ObjectHideFlags: 0
@@ -29435,7 +29536,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1388112341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -30742,7 +30845,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1438913519
 GameObject:
   m_ObjectHideFlags: 0
@@ -33253,7 +33358,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1581833866
 GameObject:
   m_ObjectHideFlags: 0
@@ -33554,7 +33661,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &1586445194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34003,7 +34112,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1606913634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -34199,7 +34310,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1613275291
 GameObject:
   m_ObjectHideFlags: 0
@@ -34297,7 +34410,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1614916785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -34540,7 +34655,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1651048373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -34643,7 +34760,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1654251412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -34807,7 +34926,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1667240575
 GameObject:
   m_ObjectHideFlags: 0
@@ -35918,7 +36039,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1707273988
 GameObject:
   m_ObjectHideFlags: 0
@@ -39129,7 +39252,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1847296213
 GameObject:
   m_ObjectHideFlags: 0
@@ -39781,7 +39906,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1886800162
 GameObject:
   m_ObjectHideFlags: 0
@@ -40536,7 +40663,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &1924144327
 GameObject:
   m_ObjectHideFlags: 0
@@ -41276,7 +41405,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!4 &1940348922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4051077086283509893, guid: c9f9d783261f16f468f813fe8691fd28, type: 3}
@@ -43444,7 +43575,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &2026530672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44047,7 +44180,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &2063956780
 GameObject:
   m_ObjectHideFlags: 0
@@ -44413,7 +44548,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &2073624773
 GameObject:
   m_ObjectHideFlags: 0
@@ -44644,7 +44781,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1001 &2076970528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45239,7 +45378,9 @@ MonoBehaviour:
   PlayerWentIntoRange: 0
   speed: 1
   dammage: 5
+  play: {fileID: 0}
   health: 100
+  PlayerImage: {fileID: 0}
 --- !u!1 &2139591776
 GameObject:
   m_ObjectHideFlags: 0

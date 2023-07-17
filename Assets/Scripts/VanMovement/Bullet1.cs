@@ -37,6 +37,26 @@ public class Bullet1 : MonoBehaviour
         }
     }
 
+    public IEnumerator Shake(float duration, float Mag)
+    {
+        Vector3 org = Camera.main.transform.localPosition;
+        float elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            float x = UnityEngine.Random.Range(-1f, 1f) * Mag;
+            float y = UnityEngine.Random.Range(-1f, 1f) * Mag;
+
+            Camera.main.transform.localPosition = new Vector3(x, y, org.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Camera.main.transform.localPosition = new Vector3(0, 0, -10f);
+        Destroy(gameObject);
+    }
+    public GameObject BloodEffect;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -45,12 +65,18 @@ public class Bullet1 : MonoBehaviour
             {
                 if(collision.gameObject.transform.parent.gameObject.GetComponent<EnemyMoveScript>().Damage(15f))
                 {
+                    StartCoroutine(Shake(1, 0.1f));
+                    Instantiate(BloodEffect, collision.gameObject.transform.parent.position, collision.gameObject.transform.parent.rotation);
                     Destroy(collision.gameObject.transform.parent.gameObject);
                     MovePlayer.instance.MONEY += 20;
+                    
                 }
+            }else
+            {
+                Destroy(gameObject);
             }
 
-            Destroy(gameObject);
+            
         }
     }
 }

@@ -65,6 +65,7 @@ public class MovePlayer : MonoBehaviour
     float angle;
     public bool isLocal;
     public GameObject winscreen;
+    public GameObject BloodEffect;
 
     // Update is called once per frame
     void Update()
@@ -96,7 +97,9 @@ public class MovePlayer : MonoBehaviour
                     {
                         if (p.GetComponentInParent<EnemyMoveScript>().Damage(100))
                         {
+                            Instantiate(BloodEffect, p.gameObject.transform.parent.position, p.gameObject.transform.parent.rotation);
                             Destroy(p.gameObject.transform.parent.gameObject);
+                            StartCoroutine(Shake(1f,0.1f));
                         }
                     }
                 }
@@ -198,8 +201,10 @@ public class MovePlayer : MonoBehaviour
 
         if (c.GetComponentInParent<EnemyMoveScript>().Damage(minigunDammage))            
         {
+            Instantiate(BloodEffect, c.gameObject.transform.parent.position, c.gameObject.transform.parent.rotation);
             Destroy(c.gameObject.transform.parent.gameObject);
             MONEY += 5;
+            StartCoroutine(Shake(1f, 0.1f));
         }
 
     }
@@ -224,8 +229,10 @@ public class MovePlayer : MonoBehaviour
 
         if (c.GetComponentInParent<EnemyMoveScript>().Damage(flamethrowerDammage))
         {
+            Instantiate(BloodEffect, c.gameObject.transform.parent.position, c.gameObject.transform.parent.rotation);
             Destroy(c.gameObject.transform.parent.gameObject);
             MONEY += 5;
+            StartCoroutine(Shake(1f, 0.1f));
         }
 
     }
@@ -239,6 +246,27 @@ public class MovePlayer : MonoBehaviour
     public float flamethrowerFireRate = 0.01f;
 
     
+
+   public IEnumerator Shake (float duration, float Mag)
+    {
+        Vector3 org = Camera.main.transform.localPosition;
+        float elapsed = 0.0f;
+        while (elapsed < duration)
+        {
+            float x = UnityEngine.Random.Range(-1f, 1f) * Mag;
+            float y = UnityEngine.Random.Range(-1f, 1f) * Mag;
+
+            Camera.main.transform.localPosition = new Vector3(x, y, org.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Camera.main.transform.localPosition = new Vector3(0, 0, -10f);
+    }
+    
+
 
 
     private bool slotCheck(int id)
@@ -345,7 +373,7 @@ public class MovePlayer : MonoBehaviour
                     StartCoroutine(Flamethrower(clossestCol2, slotid));
                 }
 
-
+                
 
 
                 break;
