@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
     public TextMeshProUGUI enemyHealth;
     public void Playgame()
     {
-        SceneManager.LoadScene("MainLevel");
+        SceneManager.LoadScene("CarScene");
     }
     public void QuitGame()
     {
@@ -25,6 +25,11 @@ public class Menu : MonoBehaviour
     public void Back()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void nextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
 

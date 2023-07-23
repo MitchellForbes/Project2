@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainLevel/CarScene.unity
     guid: bde2ba354a71fa948908ee51ae4bc2a6
+  - enabled: 1
+    path: Assets/Scenes/MainLevel/CarScene2.unity
+    guid: 2c78c725319fd85459f8c18cd9d9b45f
+  - enabled: 1
+    path: Assets/Scenes/MainLevel/CarScene3.unity
+    guid: faeb896d61994bc4385eb7e28ce66b80
   m_configObjects: {}
